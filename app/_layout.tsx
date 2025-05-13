@@ -5,8 +5,8 @@ export default function Layout() {
     return (
         <Tabs
             screenOptions={{
-                tabBarActiveTintColor: "#8B4513",
-                tabBarInactiveTintColor: "gray",
+                tabBarActiveTintColor: "#8B4513", // Brown color for active icons
+                tabBarInactiveTintColor: "#5C8D3E", // Green color for inactive icons
                 headerShown: false,
                 tabBarShowLabel: true,
                 tabBarStyle: {
@@ -14,31 +14,33 @@ export default function Layout() {
                     borderTopRightRadius: 20,
                     position: "absolute",
                     overflow: "hidden",
-                    height: 80, // Increased height
-                    paddingBottom: 15, // Adjusted padding
+                    height: 80,
+                    paddingBottom: 15,
+                    backgroundColor: "#D1E8CF", // Lighter green for overall background
                 },
                 tabBarIconStyle: {
                     marginTop: 5,
                 },
                 tabBarLabelStyle: {
-                    fontSize: 12, // Increased label size
+                    fontSize: 12,
                     paddingBottom: 5,
+                    color: "#5C8D3E",
                 },
             }}
         >
             <Tabs.Screen
-                name="home"
+                name="index" // Changed from "Home" to "index"
                 options={{
                     title: "Home",
                     tabBarIcon: ({ color }) => (
-                        <Ionicons name="home" size={28} color={color} /> // Increased icon size
+                        <Ionicons name="home" size={28} color={color} />
                     ),
                 }}
             />
             <Tabs.Screen
-                name="market"
+                name="plants" // Changed from "Plants" to "plants"
                 options={{
-                    title: "Plant",
+                    title: "Plants",
                     tabBarIcon: ({ color, size }) => (
                         <FontAwesome6
                             name="plant-wilt"
@@ -49,7 +51,7 @@ export default function Layout() {
                 }}
             />
             <Tabs.Screen
-                name="community"
+                name="ai-detection" // Changed from "AIDetection" to "ai-detection"
                 options={{
                     title: "AI Detection",
                     tabBarIcon: ({ color, size }) => (
@@ -62,7 +64,7 @@ export default function Layout() {
                 }}
             />
             <Tabs.Screen
-                name="education"
+                name="article" // Changed from "Article" to "article"
                 options={{
                     title: "Article",
                     tabBarIcon: ({ color, size }) => (
@@ -71,7 +73,7 @@ export default function Layout() {
                 }}
             />
             <Tabs.Screen
-                name="profile"
+                name="profile" // Changed from "Profile" to "profile"
                 options={{
                     title: "Profile",
                     tabBarIcon: ({ color, size }) => (
