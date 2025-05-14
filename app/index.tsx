@@ -1,9 +1,9 @@
-import { View, Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 export default function Home() {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Home Screen</Text>
-        </View>
-    );
+  return (
+    <View className="dark-mode" style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text className="text-5xl dark-mode">Home Screen</Text>
+    </View>
+  );
 }

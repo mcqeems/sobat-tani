@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark-mode {
+  @apply bg-white dark:bg-gray-950 text-gray-950 dark:text-white;
+}
+
+.dark-mode-tabs {
+  @apply bg-[#D1E8CF];
+}
